@@ -1,0 +1,58 @@
+﻿{% extends 'layout.html' %}
+
+{%block content%}
+<div class="listBox">
+	<h1>{{content.title}}</h1>
+	<p class="colDefault">
+		作者：<span class="colInfo">{{content.user.username}}</span>
+		时间：<span class="colInfo">{{content.addTime|date('Y-m-d H:i:s',-60*8)}}</span>
+		阅读：<span class="colInfo">{{content.views}}</span>
+		评论：<span class="colInfo">{{content.comments.length}}</span>
+	</p>
+	<dfn>{{content.content}}</dfn>
+</div>
+<div class="listBox message">
+	<h3 class="textLeft">
+		<strong>评论</strong>
+		<span class="em">一共有<em class="messageCount"></em>条评论</span>
+	</h3>
+	{%if userInfo._id %}
+	<p class="textLeft">zmouse</p>
+	<p class="textLeft clear">
+		<textarea id="messageContent"  rows="3"></textarea>
+		<input type="hidden" id="contentId" value="{{content.id}}" />
+		<button id="messageBtn" class="submit" style="height: 51px;">提交</button>
+	</p>
+	{%else%}
+	<p class="bgDanger" style="line-height: 30px;">你还没有登录，请先登录！</p>
+	{%endif%}
+	
+	<div class="messageList">
+	
+	</div>
+	
+	<div class="pager" style="margin-top: 2rem;">
+		<ul class="clear">
+			<li class="previous"></li>
+			<li></li>
+			<li class="next"></li>
+		</ul>
+	</div>
+		
+	<!--<div class="messageList">
+		<div class="messageBox">
+			<p>还没有留言</p>
+		</div>
+	</div>-->
+	<!--<div class="messageList" style="display: block;">
+		<div class="messageBox">
+			<p class="name clear">
+				<span class="fl">admin</span>
+				<span class="fr">2016年07月29日 17:24:01</span>			
+			</p>
+			<p>哈哈</p>
+		</div>
+	</div>-->
+</div>
+<script src="/public/js/comments.js"></script>
+{%endblock%}

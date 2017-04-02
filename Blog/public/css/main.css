@@ -1,0 +1,56 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,p {margin: 0;padding: 0;}
+html {font-size: 20px;}
+p {height: 1rem;line-height: 1rem; color: #080808;font-size: 0.75rem;}
+a {text-decoration: none;color: #080808;}
+ul,ol,li {list-style: none;list-style-type: none;}
+body {background-color: gainsboro;}
+header.backimg {margin: 0;padding: 0;width: 100%;height: 80px;}
+header.backimg img {width: 100%;}
+div.logo {position: absolute;top: 0.5rem;left: 1rem;}
+
+nav div.menu {width: 100%;height: 40px;background-color: white;text-align: center;}
+div.menu a {margin-left: 10px; height: 40px;line-height: 40px;font-size: 0.8rem;}
+div.menu a:hover {color: #D43F3A;}
+div.main {width: 70%;margin: 20px auto;}
+
+div.mainLeft {float: left; width: 59%;height: auto;}
+div.mainRight {float: right;width: 38%;height: auto;}
+div.listBox {width: 100%;height: auto;margin-bottom: 1rem;padding: 1rem;-webkit-box-sizing: border-box; box-sizing: border-box; padding-bottom: 15px; background-color: white;}
+div.listBox h1 {height: 3rem;line-height: 3.5rem;font-size: 1rem;text-align: center;}
+p.colDefault {height: 1.5rem;line-height: 1.5rem;font-size: 0.7rem;text-align: center;}
+div.function {margin-top: 0.5rem;width: 4rem;height: 1.2rem;border-radius: 2px;background-color: #FF0000;text-align: center;}
+div.function a {height: 1rem;line-height: 1rem;font-size: 0.7rem;color: white;}
+
+div.pager {width: 100%;height: 2rem;background-color: white;}
+ul.clear li {float: left;width: 33%;height: 2rem;line-height: 2rem;text-align: center;font-size: 0.7rem;}
+
+div.rightBox {position: relative;width: 100%;height: auto;margin-bottom: 0.8rem;padding: 1rem 3rem;-webkit-box-sizing: border-box;box-sizing: border-box; background-color: white;}
+div.rightBox p {font-size: 0.7rem;}
+div.title {margin-bottom: 0.3rem;height: 1.2rem;line-height: 1.2rem;font-size: 0.8rem;font-weight: bold;}
+div.line {height: 1.3rem;line-height: 1.3rem;font-size: 0.7rem;}
+div.line button {margin: 0.3rem 2.8rem 0.3rem; width: 64%;height: 1.2rem;line-height: 1.2rem;border: none;border-radius: 4px; color: white;background-color: #FF0000;}
+p.textRight {display: block; position: relative;float: right; margin-top: 0.4rem; font-size: 0.7rem;}
+a.colMint {text-decoration: underline;color: #269ABC;}
+a.colMint:hover {color: #D43F3A;}
+#logout {height: 1.5rem;line-height: 1.5rem;font-size: 0.7rem;color: orangered;}
+span.userInfo {height: 1rem;line-height: 1rem;color: red;font-size: 0.7rem;}
+a#logout:hover {text-decoration: underline;color: red;}
+span.tip {font-size: 0.7rem;height: 1.2rem;line-height: 1.2rem;}
+p.textCenter {margin-top: 1.6rem; margin-bottom: 1rem;height: 1rem;line-height: 1rem;font-size: 0.7rem;color: red;}
+
+div.message {position: relative;}
+h3.textLeft {height: 1.5rem;line-height: 1.5rem; font-size: 0.7rem;}
+span.em {float: right;font-size: 0.6rem;font-weight: 100;}
+em.messageCount {font-style: italic;font-weight: bold;}
+p.textLeft {height: 1.3rem;line-height: 1.3rem;}
+textarea {float: left; width: 80%;border-color: #2AABD2;}
+button#messageBtn {width: 18%;float: left;border: none; background-color: #2AABD2;color: white;}
+button#messageBtn:hover {color: red;}
+p.bgDanger {clear: both;position: relative;margin: 1rem 0 1rem 0; height: 1.4rem;line-height: 1.4rem;border: none;font-size: 0.6rem; background-color: #FF4500;color: white;text-align: center;}
+/*div.messag
+ * eList {clear: both;}*/
+div.messageList {position: relative;margin: 1rem 0;}
+div.messageBox:first-child {margin-top: 1.7rem;}
+div.messageBox {position: relative;margin: 1rem 0;}
+span.fl {float: left;}
+span.fr {float: right;}
